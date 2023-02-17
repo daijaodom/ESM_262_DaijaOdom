@@ -1,0 +1,17 @@
+---
+title: "Assignment 1a"
+author: "Daija Odom"
+date: "2023-02-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Why I am taking this course
+I am taking ESM 262 because I do not feel strong in my R skills.It took me quite a while to figure out how to set up these working directories because the way I learned R Studio was using different terminology and it is often hard for me to translate things I may know into the way someone else speaks about them. Although I took ESM 206 my first year of the MESM program, R is still a program I do not feel comfortable using alone. And while I am not sure I will use R in my future career, I would still like to have some coding skills under my belt. 
+
+
+### My Data Science Background
+My background in data science includes coding in ESM 206 my Fall Quarter of my first year, ESM 204 Spring Quarter of my first year, and this course. My Bren Group Project included coding in R a lot, but I did not contribute to much of the code. I do not feel I can say I have a strong data science background. 
