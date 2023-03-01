@@ -1,0 +1,13 @@
+## Example Program - Life Cycle Emissions of a Battery Electric Vehicle (BEV)
+
+Contract
+
+*Input*: 
+
+*Output*: Use-phase Life cycle emissions (MT CO2e) 
+
+*Parameters*: K_{Eff} reservoir efficiency, ρ (density of water), g (acceleration due to gravity)
+
+What the function will do - compute power using the following equation - *body* of the function 
+
+

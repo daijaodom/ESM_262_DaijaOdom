@@ -1,0 +1,57 @@
+---
+title: "Auto Power Consumption Function"
+author: "Daija Odom"
+date: "2023-02-26"
+---
+
+```{r}
+# Scenario 1
+## Write a function to compute power, given a truck of m=31752 kg (parameters for a heavy truck) for a range of different highway speeds. The surface area of this truck is 16m^2.
+
+#convert km/hr to m/s
+
+#30 m/s
+power_gen_auto(31752, 30, 16)
+#80 km/hr
+power_gen_auto(31752, 22, 16)
+#120 km/hr
+power_gen_auto(31752, 33, 16)
+#40 km/hr
+power_gen_auto(31752, 11, 16)
+#5 km/hr
+power_gen_auto(31752, 1.4, 16)
+```
+
+```{r}
+# Running the same function in a vector
+V = c(30, 80*5/18, 120*5/18, 40*5/18, 5*5/18) # make a vector called "V" for velocity
+Pb_1 = power_gen_auto(31752, V, 16) # use "V" in my function 
+```
+
+
+```{r}
+# Scenario 2
+## Recompute for a lighter vehicles (15,000 kg). Add a second line to your graph for the lighter vehicle.
+
+Pb_2 = power_gen_auto(15000, V, 16)
+```
+
+
+```{r}
+# Combine into a single data frame
+combined_power_gen = cbind.data.frame(V, Pb_1, Pb_2)
+```
+
+
+```{r}
+# Plot power as a function of speed
+# ggplot(df)
+
+options(scipen = 999) # change y-axis from scientific notation
+ggplot(data = combined_power_gen, aes(V, Pb_1)) + 
+        geom_line(col="darkgreen") +
+        geom_line(aes(V, Pb_2), col="darkblue") +
+         labs(x="Velocity (m/s)", y="Power Comsumption (Watts)",
+              title = "Power Consumption vs. Speed")
+```
+
