@@ -12,16 +12,18 @@ library(tidyverse)
 
 
 ```{r}
-# Task 1: Use a for loop to compute he total yield after 10 years 
+# Task 1: Use a for loop to compute the total yield after 10 years 
 # Fertilizer is normally distributed with a mean of 5 and standard deviation of 0.5
 fertilizer_app = rnorm(n= 10, mean = 5, sd = 0.5)
-# TP is 20 cm
+# TP (mean precipitation) is 20 cm
 TP = 20
-# ???
+# Make a table 
 crop = data.frame(fertilizer_app = fertilizer_app)
 # Create a for loop to compute the total yield after 10 years
 # year is the counter (similar to using i)
-for (year in 1:10)
+for (year in 1:10){
+  
+}
 ```
 
 
