@@ -1,0 +1,31 @@
+---
+title: "Assignment 5"
+author: "Daija Odom"
+date: "2023-03-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(purrr)
+library(ggpubr)
+```
+
+```{r}
+# Read in the data from GitHub
+# The read.delim() function reads a file into a list
+fish_data <- read.delim("fish.txt")
+
+# Convert data frame to a vector
+fish_vector = fish_data$x
+head(fish_vector)
+```
+
+```{r}
+# Run function to compute most common species, rarest species, and total number of fish
+compute_fish(fish_vector)
+
+```
+
