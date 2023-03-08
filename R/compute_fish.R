@@ -4,7 +4,7 @@
 #' @param species vector of species 
 #' @return list with the following items
 #' \describe{
-#' \item {Name of the most common species }
+#' \item {Name of the most common species}
 #' \item {Name of the rarest species}
 #' \item {Total number of species}
 #' }
